@@ -199,7 +199,7 @@ h3,h5,p,li{
   #content   .timeline::before {
       position: fixed;
       top: 0;
-      height: 100%;
+      height: 400px;
       padding-right: 11px;
       border-right: 4px solid #44B5CB;
       content: "";
