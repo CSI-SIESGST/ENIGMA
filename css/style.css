@@ -183,10 +183,9 @@ h3,h5,p,li{
 
 
 
-
+    /* Timeline -------------------------------------------------------------------------------------------------------------------*/
     @import '//fonts.googleapis.com/css?family=Muli:300';
-    /* Timeline
-     */
+
     .timeline {
       display: -webkit-flex;
       display: flex;
@@ -296,6 +295,4 @@ h3,h5,p,li{
         padding-bottom: 6.85714px;
       }
     }
-    /* Display stuff
-     */
-
+   
