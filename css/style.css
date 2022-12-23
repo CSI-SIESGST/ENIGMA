@@ -297,11 +297,12 @@ h3,h5,p,li{
     /*contect us -----------------------------------------------------------------------------------------------------------*/
     /*Card Over Map*/
     #div_2 {
-      height: 110%;
-      width: 30%;
+
+      width:fit-content;
       margin-top: -25%;
       margin-left: 10%;
-      vertical-align: top;
+      margin-right: 10%;
+    
       background: #FBFBFB;
       box-shadow: 1px 1px 30px rgba(0, 0, 0, .1);
     }
