@@ -96,7 +96,13 @@
 
 
 
-
+h1 {
+  font-family: 'inter', sans-serif;
+  letter-spacing: 1.5px;
+  color: white;
+  font-weight: 100;
+  font-size: 2.4em;
+}
 h3,h5,p,li{
       color: #cccccc;
       text-align: justify;
@@ -159,141 +165,6 @@ h3,h5,p,li{
       -webkit-backdrop-filter: blur(5px);
       }
     
-    /*timeline *-----------------------------------------------------------------------------------------------------/
-    /* Import */
-    @font-face {
-        font-family: 'Oswald';
-        font-style: normal;
-        font-weight: 300;
-        src: url(https://fonts.gstatic.com/s/oswald/v49/TK3_WkUHHAIjg75cFRf3bXL8LICs169vsUZiYA.ttf) format('truetype');
-      }
-      @font-face {
-        font-family: 'Oswald';
-        font-style: normal;
-        font-weight: 400;
-        src: url(https://fonts.gstatic.com/s/oswald/v49/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUZiYA.ttf) format('truetype');
-      }
-      @font-face {
-        font-family: 'Oswald';
-        font-style: normal;
-        font-weight: 700;
-        src: url(https://fonts.gstatic.com/s/oswald/v49/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZosUZiYA.ttf) format('truetype');
-      }
-      @font-face {
-        font-family: 'Source Sans Pro';
-        font-style: normal;
-        font-weight: 200;
-        src: url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3i94_wlxdr.ttf) format('truetype');
-      }
-      @font-face {
-        font-family: 'Source Sans Pro';
-        font-style: normal;
-        font-weight: 300;
-        src: url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdr.ttf) format('truetype');
-      }
-      @font-face {
-        font-family: 'Source Sans Pro';
-        font-style: normal;
-        font-weight: 400;
-        src: url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7g.ttf) format('truetype');
-      }
-      @font-face {
-        font-family: 'Source Sans Pro';
-        font-style: normal;
-        font-weight: 600;
-        src: url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdr.ttf) format('truetype');
-      }
-      @font-face {
-        font-family: 'Source Sans Pro';
-        font-style: normal;
-        font-weight: 700;
-        src: url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdr.ttf) format('truetype');
-      }
-      /* Variables */
-      /* Base */
-      body {
-        background: #252827;
-        font-size: 16px;
-      }
-      strong {
-        font-weight: 600;
-      }
-      h1 {
-        font-family: 'inter', sans-serif;
-        letter-spacing: 1.5px;
-        color: white;
-        font-weight: 100;
-        font-size: 2.4em;
-      }
-      #content {
-        margin-top: 50px;
-        text-align: center;
-      }
-      /* Timeline */
-      .timeline {
-        border-left: 4px solid #44B5CB;
-        border-bottom-right-radius: 4px;
-        border-top-right-radius: 4px;
-        background: rgba(255, 255, 255, 0.03);
-        color: rgba(255, 255, 255, 0.8);
-        font-family: 'Source Sans Pro', sans-serif;
-        margin: 50px auto;
-        letter-spacing: 0.5px;
-        position: relative;
-        line-height: 1.4em;
-        font-size: 1.03em;
-        padding: 50px;
-        list-style: none;
-        text-align: left;
-        font-weight: 100;
-        max-width: 30%;
-      }
-      .timeline h1,
-      .timeline h2,
-      .timeline h3 {
-        font-family: 'Oswald', sans-serif;
-        letter-spacing: 1.5px;
-        font-weight: 100;
-        font-size: 1.4em;
-      }
-      .timeline .event {
-        border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
-        padding-bottom: 25px;
-        margin-bottom: 50px;
-        position: relative;
-      }
-      .timeline .event:last-of-type {
-        padding-bottom: 0;
-        margin-bottom: 0;
-        border: none;
-      }
-      .timeline .event:before,
-      .timeline .event:after {
-        position: absolute;
-        display: block;
-        top: 0;
-      }
-      .timeline .event:before {
-        left: -235.5px;
-        color: rgba(255, 255, 255, 0.4);
-        content: attr(data-date);
-        text-align: right;
-        font-weight: 100;
-        font-size: 0.9em;
-        min-width: 120px;
-      }
-      .timeline .event:after {
-        box-shadow: 0 0 0 4px #44B5CB;
-        left: -57.85px;
-        background: #313534;
-        border-radius: 50%;
-        height: 11px;
-        width: 11px;
-        content: "";
-        top: 5px;
-      }
-      
-    
     /*contect us -----------------------------------------------------------------------------------------------------------*/
     /*Card Over Map*/
     #div_2 {
@@ -307,3 +178,124 @@ h3,h5,p,li{
       box-shadow: 1px 1px 30px rgba(0, 0, 0, .1);
     }
     
+
+
+
+
+
+
+    @import '//fonts.googleapis.com/css?family=Muli:300';
+    /* Timeline
+     */
+    .timeline {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      padding: 0 75px;
+      margin: 0;
+      list-style: none;
+    }
+
+  #content .card{
+    background: #00000000;
+  }
+
+  #content   .timeline::before {
+      position: fixed;
+      top: 0;
+      height: 100%;
+      padding-right: 11px;
+      border-right: 2px solid #44B5CB;
+      content: "";
+    }
+    #content  .timeline__item {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: stretch;
+      align-items: stretch;
+      padding: 5px 0;
+    }
+    #content   .timeline__step {
+      padding-right: 50px;
+    }
+    #content  .timeline__step__marker {
+      position: relative;
+      display: table-cell;
+      height: 24px;
+      min-height: 24px;
+      width: 24px;
+      min-width: 24px;
+      border: 4px solid #44B5CB;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      background-color: #44B5CB;
+      z-index: 0;
+    }
+
+    #content   .timeline__step__marker--blue {
+      border-color: #44B5CB;
+    }
+    #content .timeline__time, #content li {
+      padding-right: 126px;
+      font-size: 16px;
+    }
+    #content   .timeline__title {
+      padding-bottom: 26px;
+      font-size: 22px;
+    }
+    #content   .timeline__points {
+      padding: 0;
+      list-style: none;
+      font-size: 24px;
+      color: #77777D;
+    }
+
+    
+    /* For mobile!
+     */
+    @media (max-width: 768px) {
+      .card {
+        max-width: 375;
+      }
+    
+      #content    .timeline {
+        padding: 0 35px;
+      }
+      #content   .timeline::before {
+        padding-right: 5px;
+      }
+      #content  .timeline__item {
+        padding: 5px 0;
+      }
+      #content   .timeline__step {
+        padding-right: 35px;
+      }
+      #content  .timeline__step__marker {
+        height: 13.71429px;
+        min-hieght: 13.71429px;
+        width: 13.71429px;
+        min-width: 13.71429px;
+        border-width: 2.28571px;
+      }
+      #content  .timeline__title {
+        padding-bottom: 15px;
+        font-size: 18px;
+
+      }
+       #content li {
+        padding-right: 0px;
+        font-size: 16px;
+        text-align: left;
+      }
+      #content  .timeline__points {
+        font-size: 13.71429px;
+      }
+      #content  .timeline__points > * {
+        padding-bottom: 6.85714px;
+      }
+    }
+    /* Display stuff
+     */
+
