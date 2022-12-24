@@ -179,7 +179,7 @@ h3,h5,p,li{
 
 
 
-    /* Timeline -------------------------------------------------------------------------------------------------------------------*/
+    /* Timeline -------------------------------------------------------------------------------------------------------------------
     @import '//fonts.googleapis.com/css?family=Muli:300';
 
     .timeline {
@@ -246,10 +246,10 @@ h3,h5,p,li{
       font-size: 24px;
       color: #77777D;
     }
-
+*/
     
     /* For mobile!
-     */
+     
     @media (max-width: 768px) {
       .card {
         max-width: 375;
@@ -291,4 +291,86 @@ h3,h5,p,li{
         padding-bottom: 6.85714px;
       }
     }
+   */
+
+
    
+   #content .circle {
+  padding: 7px 15px;
+  border-radius: 50%;
+  background-color: #00ADB5;
+  color: #fff;
+  max-height: 50px;
+  z-index: 2;
+}
+
+#content .how-it-works.row .col-2 {
+  align-self: stretch;
+}
+#content .how-it-works.row .col-2::after {
+  content: "";
+  position: absolute;
+  border-left: 5px dashed #00ADB5;
+  z-index: 1;
+}
+#content .how-it-works.row .col-2.bottom::after {
+  height: 50%;
+  left: 50%;
+  top: 50%;
+}
+#content .how-it-works.row .col-2.full::after {
+  height: 150%;
+  left: calc(50% - 3px);
+}
+#content .how-it-works.row .col-2.top::after {
+  height: 50%;
+  left: 50%;
+  top: 0;
+}
+
+
+#content .timeline div {
+  padding: 0;
+  height: 40px;
+}
+#content .timeline hr {
+  border-top: 5px dashed #00ADB5;
+  margin: 0;
+  top: 17px;
+  position: relative;
+}
+#content .timeline .col-2 {
+  display: flex;
+  overflow: hidden;
+}
+#content .timeline .corner {
+  border: 5px  dashed #00ADB5;
+  width: 100%;
+  position: relative;
+  border-radius: 15px;
+}
+
+
+
+
+/* For Tablet View */
+@media screen and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+  #content .Schedule-container {
+  font-size: 1rem;
+}
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px)
+and (orientation: portrait) {
+  #content .Schedule-container{
+  font-size: 2rem;
+}
+#content .h5, h5 {
+  font-size: 2rem;
+}
+#content .circle {
+padding: 5px 10px;
+}
+}
