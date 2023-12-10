@@ -33,7 +33,7 @@
       top:0;
       left:0;
       z-index:15;
-      background:url('../texture.png');
+      /* background:url('../texture.png'); */
 }
 #hero .caption {
       position:relative;
@@ -74,7 +74,7 @@
 @media screen and (min-width:1200px)
 {
       #hero .caption h1 {
-            font-size:15rem;
+            font-size:13rem;
       }
       #hero .caption h2 {
             font-size:2.5rem;
@@ -96,7 +96,7 @@ h1 {
   font-family: 'inter', sans-serif;
   letter-spacing: 1.5px;
   color: white;
-  font-weight: 100;
+  /* font-weight: 100; */
   font-size: 2.4em;
 }
 h3,h5,p,li{
