@@ -6,7 +6,13 @@
     <title>Problem Statement</title>
     <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+      <link href="https://fonts.googleapis.com/css?family=Oswald:700|PT+Sans&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <link href="css/normalize.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
     <style>
         body {
             background-color: black;
@@ -15,6 +21,10 @@
 
         .container {
             margin-top: 20px;
+        }
+
+        .mb-4 {
+            margin-top: 60px;
         }
 
         .card-container {
@@ -84,39 +94,69 @@
             text-align: justify;
         }
 
-        .navbar-nav .nav-link {
-        color: white;
-        font-size: 1.25em;
-    }
+        .card-title {
+            text-align: center;
+        }
 
-    .navbar-nav .nav-link:hover {
-        color: #00ADB5;
-    }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <nav class="navbar navbar-expand">
-            <span class="navbar-brand">CSI-SIESGST</span>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
+    <nav class="navbar navbar-expand-sm fixed-top navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">CSI-SIESGST</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
+                <span ><i class="fa fa-navicon" style="color:#fff;"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar1">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index.html" onclick="toggleNavbar()">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#2" onclick="toggleNavbar()">Rule</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#3" onclick="toggleNavbar()">Problem Statement</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+
+      <div id="2" class="container mt-5 d-flex flex-column align-items-center">
+        <h1 class="mb-4">ENIGMA 2.0 RULES</h1>
+        <div id="first-ins" class="col-md-9">
+            <hr>
+            <ul style="margin-left: 5px; font-size: large;">
+                <li><b>Rules to be followed:-</b></li>
             </ul>
-        </nav>
+            <ol style="margin-left: 30px;">
+                <li>Choose any one problem statement.</li>
+                <li>Provide a clear and concise answer to the given question.</li>
+                <li>Keep responses of 500 words or less.</li>
+                <li>Prohibit copying from external sources.</li>
+                <li>Submit answers in PDF or DOC format.</li>
+                <li>Include team name, members' names, and leader's name at the document's top-right.</li>
+                <li>Upload the completed answer document to the designated folder.</li>
+                <li>Font size: 12; Times New Roman is the preferred style.</li>
+                <li>Omit images in the abstract.</li>
+                <li><b>Deadline: January 13, 2024, 11:59 PM;</b> late submissions will not be accepted.</li>
+            </ol>
+        </div>
     </div>
     
+    
 
-    <div class="container mt-5 d-flex flex-column align-items-center">
-        <h1 class="mb-4">PROBLEM STATEMENTS</h1>
+    <div id="3" class="container mt-5 d-flex flex-column align-items-center">
+        <h1 class="mb-4">PROBLEM STATEMENTS</h1><hr color="#808080">
     </div>
 
     <div class="container mt-5 d-flex flex-column align-items-center">
         <div class="card-container card-margin-bottom">
             <div class="row g-0">
                 <div class="col-md-4 position-relative d-flex align-items-center">
-                    <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-d65g37ilunc98b3k2b3qt74v26-20180418075950.Medi.jpeg" class="img-fluid rounded-start mx-auto p-3" alt="...">
+                    <img src="prob_images/prob1.jpeg" class="img-fluid rounded-start mx-auto p-3" alt="...">
                     <div class="vertical-line"></div>
                 </div>
                 <div class="col-md-8">
@@ -140,7 +180,7 @@
         <div class="card-container card-margin-bottom">
             <div class="row g-0">
                 <div class="col-md-4 order-md-2 position-relative d-flex align-items-center">
-                    <img src="..." class="img-fluid rounded-start p-3" alt="...">
+                    <img src="prob_images/prob2.jpeg" class="img-fluid rounded-start p-3" alt="...">
                 </div>
                 <div class="col-md-8 order-md-1">
                     <div class="card-body text-center">
@@ -165,7 +205,7 @@
         <div class="card-container card-margin-bottom">
             <div class="row g-0">
                 <div class="col-md-4 position-relative d-flex align-items-center">
-                    <img src="..." class="img-fluid rounded-start p-3" alt="...">
+                    <img src="prob_images/prob3.jpeg" class="img-fluid rounded-start p-3" alt="...">
                     <div class="vertical-line"></div>
                 </div>
                 <div class="col-md-8">
@@ -189,7 +229,7 @@
         <div class="card-container card-margin-bottom">
             <div class="row g-0">
                 <div class="col-md-4 order-md-2 position-relative d-flex align-items-center">
-                    <img src="..." class="img-fluid rounded-start p-3" alt="...">
+                    <img src="prob_images/prob4.jpeg" class="img-fluid rounded-start p-3" alt="...">
                 </div>
                 <div class="col-md-8 order-md-1">
                     <div class="card-body text-center">
@@ -213,7 +253,7 @@
         <div class="card-container card-margin-bottom">
             <div class="row g-0">
                 <div class="col-md-4 position-relative d-flex align-items-center">
-                    <img src="..." class="img-fluid rounded-start p-3" alt="...">
+                    <img src="prob_images/prob5.jpeg" class="img-fluid rounded-start p-3" alt="...">
                     <div class="vertical-line"></div>
                 </div>
                 <div class="col-md-8">
@@ -237,7 +277,7 @@
         <div class="card-container card-margin-bottom">
             <div class="row g-0">
                 <div class="col-md-4 order-md-2 position-relative d-flex align-items-center">
-                    <img src="..." class="img-fluid rounded-start p-3" alt="...">
+                    <img src="prob_images/prob6.jpeg" class="img-fluid rounded-start p-3" alt="...">
                 </div>
                 <div class="col-md-8 order-md-1">
                     <div class="card-body text-center">
@@ -261,7 +301,7 @@
         <div class="card-container card-margin-bottom">
             <div class="row g-0">
                 <div class="col-md-4 position-relative d-flex align-items-center">
-                    <img src="..." class="img-fluid rounded-start p-3" alt="...">
+                    <img src="prob_images/prob7.jpeg" class="img-fluid rounded-start p-3" alt="...">
                     <div class="vertical-line"></div>
                 </div>
                 <div class="col-md-8">
@@ -285,7 +325,7 @@
         <div class="card-container card-margin-bottom">
             <div class="row g-0">
                 <div class="col-md-4 order-md-2 position-relative d-flex align-items-center">
-                    <img src="..." class="img-fluid rounded-start p-3" alt="...">
+                    <img src="prob_images/prob8.jpeg" class="img-fluid rounded-start p-3" alt="...">
                 </div>
                 <div class="col-md-8 order-md-1">
                     <div class="card-body text-center">
@@ -308,9 +348,25 @@
         
     </div>
 
+    <!-- Footer -->
+  <footer class="page-footer  pt-2">
+  
+    <p style="text-align: center;"> <br> </p>
+
+    </footer></section>
+
+
+  <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
+    <div class="container text-center">
+    <p style="text-align: center;">Copyright © CSI SIESGST <br>Developed By Technical Team Of CSI SIESGST </p>
+    </div>
+  </footer>
+
     <!-- Bootstrap JS and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="js/app.js"></script>
 </body>
 </html>
